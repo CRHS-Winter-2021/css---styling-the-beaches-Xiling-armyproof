@@ -75,10 +75,13 @@
 		.dropdown:hover .dropdown-content {
 			display: block;
 											}
-											
-		a:visited { 	
-                color: orange;
-}
+		.left_links a:link{color:red;}					
+		.left_links a:visited {color: green;}
+		.left_links a:hover {background-color: rgb(255, 214, 255);}  
+		.left_links a:active {background-color: rgb(255, 214, 255);} 
+		.left_links a:focus {background-color: rgb(255, 214, 255);} 
+
+		
 									
 		#biaoti{ font-size:40px;
 				text-align:center;
@@ -86,6 +89,41 @@
 				color:white;
 				margin-top:3px;
 				}
+				
+		#image{border: 3px solid black;
+				margin-top: 100px;
+				margin-bottom: 100px;
+				margin-right: 100px;
+				margin-left: 100px;
+
+		}
+		.left_links{
+					background-color:white;
+					float:left;
+					width: 20%;
+					height:20%;
+					border: 2px solid red;
+					}
+					
+					
+		.center{
+				overflow:scroll;
+				
+				float:left;
+				margin: auto;
+				position:relative;
+				
+				
+				
+				
+				
+
+
+
+
+
+
+
 		</style>
 		<title>My Favourite Beaches</title>
 	</head>
@@ -114,27 +152,32 @@
 		<!-- end of navigation bar -->
 		
 		
-		<div id="biaoti">
-			My Favourite Beaches
+		
+			<p id="biaoti">My Favourite Beaches</p>
 			
-		</div>  <!-- end of header --> 
+		<!-- end of header --> 
 		
-		
-		<p >
-			LINKS <br>  
-			<!-- Make Links into an unordered list -->
-			<a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> 10 Quirky Things You Didn’t Know About PEI </a>
-			<a href="https://www.tourismpei.com/about-pei" target="_blank">Environment</a>
-			<a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Getting Here</a>
-			<a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Important Travel Information</a>
-			<a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">Island Webcams</a>
+		<!-- Make Links into an unordered list -->
+		<div class="left_links">
+		<ul>
+		LINKS 
+			<li><a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> 10 Quirky Things You Didn’t Know About PEI </a></li>
+			<li><a href="https://www.tourismpei.com/about-pei" target="_blank">Environment</a></li>
+			<li><a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Getting Here</a></li>
+			<li><a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Important Travel Information</a></li>
+			<li><a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">Island Webcams</a></li>
 			
-		</p> <!-- end of left column -->
-		
-		
-		<p >
-			<img src="Media/beach1.jpg" alt="Beautiful beach" width = "200px"> 
+		</ul>
 			
+		</div>
+			
+			
+		 <!-- end of left column -->
+		
+		
+		
+			<img id="image" src="Media/beach1.jpg" alt="Beautiful beach" width = "40%"> 
+		<div class="center">
 			ABOUT OUR BEACHES <br>
 			With beaches that sing and others that stun visitors with their pristine blend of rustic solitude and splendid red sand, Prince Edward Island's sandy expanses continue to receive raves from all over the world, including a nomination as one of Canada's natural wonders.
 			<br>
@@ -161,7 +204,7 @@
 			<br>
 			Others dream of returning. "PEI is the most beautiful, clean province we have seen, and the beaches are something us in Alberta only see in pictures," says Lori from Edmonton. Lori says she'll return for another PEI vacation soon. Such is the draw of PEI's beautiful beaches. And one thing is certain - she won't be alone.
 			
-		</p> <!-- end of center column -->
+		</div> <!-- end of center column -->
 		
 		
 		<p >
