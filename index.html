@@ -6,6 +6,17 @@
 			Based upon: https://www.tourismpei.com/  -->
 			
 		<style>
+		
+		body{background-color:#038787;}
+		
+		body a:link{color:red;}					
+		body a:visited {color: green;}
+		body a:hover {background-color: rgb(255, 214, 255);}  
+		body a:active {background-color: rgb(255, 214, 255);} 
+		body a:focus {background-color: rgb(255, 214, 255);} 
+		
+		
+		
 			/* Navbar container */
 		.navbar {
 			overflow: hidden;
@@ -54,8 +65,9 @@
 			/* Dropdown content (hidden by default) */
 		.dropdown-content {
 			display: none;
-			position: absolute;
+			position: fixed;
 			background-color: purple;
+			
 			min-width: 160px;
 			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 			z-index: 1;
@@ -80,26 +92,24 @@
 		.dropdown:hover .dropdown-content {
 			display: block;
 											}
-		.left_links a:link{color:red;}					
-		.left_links a:visited {color: green;}
-		.left_links a:hover {background-color: rgb(255, 214, 255);}  
-		.left_links a:active {background-color: rgb(255, 214, 255);} 
-		.left_links a:focus {background-color: rgb(255, 214, 255);} 
+		
 
 		
 									
-		#biaoti{ margin-top:50px;
-		font-size:40px;
+		#biaoti{ 
+				margin-top:50px;
+				font-family: Arial;
+				font-size:40px;
 				text-align:center;
 				background-color:grey;
 				color:white;
 				
 				}
 				
-		#image{border: 2px solid black;
+		#image{border: 3px double white;
 		margin:auto;}
 		.left_links{
-					background-color:white;
+					background-color:#81D6D6;
 					float:left;
 					width: 20%;
 					height:900px;
@@ -109,10 +119,11 @@
 					
 					}
 					
-					
-		.center{background-color:green;
+		#smalltitle{font-size:40px;
+					font-weight:bold;}
+		.center{background-color:#74ADAD;
 				overflow:auto;
-				width : 500px;
+				width : 478px;
 				height : 900px;
 				float:left;
 				margin-left:10px;
@@ -125,10 +136,10 @@
 				
 				
 				
-		.right{background-color:yellow;
-					
-					
-					border: 2px solid red;float:right;	
+		.right{
+					font-family: Arial;
+					background-color:#07ECEC;
+					border: 2px solid red;	
 					float:left;
 					margin-left:50px;
 					width:230px;
@@ -140,15 +151,16 @@
 				position: relative;
 				left: 0;
 				bottom: 0;
-				
+				font-family: Arial;
 				width: 100%;
 				
-				background-color: red;
+				background-color: #0B4545;
 				color: white;
 				clear:both;
 				}
 
-
+		.bottom a:visited {color:grey;}
+		.bottom a:link{color:red;}
 
 
 		</style>
@@ -188,7 +200,7 @@
 		<div class="left_links">
 		<ul>
 		LINKS 
-			<li><a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> 10 Quirky Things You Didn’t Know About PEI </a></li>
+			<li><a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> 10 Quirky Things You Did not Know About PEI </a></li>
 			<li><a href="https://www.tourismpei.com/about-pei" target="_blank">Environment</a></li>
 			<li><a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Getting Here</a></li>
 			<li><a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Important Travel Information</a></li>
@@ -203,9 +215,9 @@
 		
 		
 		<div class="center">
-			<img id="image" src="Media/beach1.jpg" alt="Beautiful beach" width = "470px"> 
+			<img id="image" src="Media/beach1.jpg" alt="Beautiful beach" width = "478px"> 
 		
-			<p>ABOUT OUR BEACHES <br>
+			<p><em id="smalltitle">ABOUT OUR BEACHES</em><br><br>
 			With beaches that sing and others that stun visitors with their pristine blend of rustic solitude and splendid red sand, Prince Edward Island's sandy expanses continue to receive raves from all over the world, including a nomination as one of Canada's natural wonders.
 			<br>
 			"Walking along the beautiful white sand produces an interesting sound… akin to singing, or some would say, squeaking," the CBC wrote on its website. "It's a phenomenon that scientists still don't completely understand."
