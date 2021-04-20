@@ -5,44 +5,220 @@
 			March 2020
 			Based upon: https://www.tourismpei.com/  -->
 			
+		<style>
+		
+		
+		
+	
+		
+		
+			/* Navbar container */
+		.navbar {
+			overflow: hidden;
+			background-color:#6c1187;
+			font-family: Arial;
+			position:fixed;
+			top:0;
+			width:100%;
+			
+			
+				}
+
+			/* Links inside the navbar */
+		.navbar a {
+			float: left;
+			font-size: 16px;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+				}
+
+			/* The dropdown container */
+		.dropdown {
+			float: left;
+			overflow: hidden;
+					}
+
+			/* Dropdown button */
+		.dropdown .dropbtn {
+			font-size: 16px;
+			border: none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit; /* Important for vertical align on mobile phones */
+			margin: 0; /* Important for vertical align on mobile phones */
+							}
+
+			/* Add a red background color to navbar links on hover */
+		.navbar a:hover, .dropdown:hover .dropbtn {
+			background-color: red;
+												}
+
+			/* Dropdown content (hidden by default) */
+		.dropdown-content {
+			display: none;
+			position: fixed;
+			background-color: purple;
+			
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+							}	
+
+			/* Links inside the dropdown */
+		.dropdown-content a {
+			float: none;
+			color: white;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+							}
+
+			/* Add a grey background color to dropdown links on hover */
+		.dropdown-content a:hover {
+			background-color: black;
+									}
+
+			/* Show the dropdown menu on hover */
+		.dropdown:hover .dropdown-content {
+			display: block;
+											}
+		
+
+		.left_links a:link{color:red;}					
+		.left_links a:visited {color: green;}
+		.left_links a:hover {background-color: rgb(255, 214, 255);}  
+		.left_links a:active {background-color: rgb(255, 214, 255);} 
+		.left_links a:focus {background-color: rgb(255, 214, 255);} 
+		
+									
+		#title{ 
+				margin-top:50px;
+				font-family: Arial;
+				font-size:40px;
+				text-align:center;
+				background-color:grey;
+				color:white;
 				
+				}
+				
+		#image{border: 3px double white;
+		margin:auto;}
+		.left_links{
+					background-color:#81D6D6;
+					float:left;
+					width: 20%;
+					height:900px;
+					border: 2px solid red;
+					margin-left:10px;
+					margin-right:50px;
+					
+					}
+					
+		#smalltitle{font-size:40px;
+					font-weight:bold;}
+		.center{background-color:#74ADAD;
+				overflow:auto;
+				width : 478px;
+				height : 900px;
+				float:left;
+				margin-left:10px;
+				margin-right:40px;
+				}
+				
+				
+				
+				
+				
+				
+				
+		.right{
+					font-family: Arial;
+					background-color:#07ECEC;
+					border: 2px solid red;	
+					float:left;
+					margin-left:50px;
+					width:230px;
+					height:900px;
+					overflow:auto;}
+
+
+		.bottom{
+				position: relative;
+				left: 0;
+				bottom: 0;
+				font-family: Arial;
+				width: 100%;
+				
+				background-color: #0B4545;
+				color: white;
+				clear:both;
+				}
+
+		.bottom a:visited {color:grey;}
+		.bottom a:link{color:red;}
+
+
+		</style>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
 		<title>My Favourite Beaches</title>
 	</head>
-
+	
 	<body>
-		<p >
+	
+	 <!-- make into a drop down -->
+		<div class="navbar">
+			
 				<a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> Festivals and Events </a>
 				<a href="https://www.tourismpei.com/about-pei" target="_blank"> About PEI </a>
-				Planning a Trip:  <!-- make into a drop down -->
-					<a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Vacation Packages</a>
-					<a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Where to Stay</a>
-					<a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">What to do</a>
+					<div class="dropdown">
+						<button class="dropbtn">Planning a Trip<i class="fa fa-caret-down"></i></button>
+					<div class="dropdown-content">
+						<a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Vacation Packages</a>
+						<a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Where to Stay</a>
+						<a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">What to do</a>
+					</div>
+					</div>
 			
-		</p>  <!-- end of navigation bar -->
+		</div>
 		
 		
-		<p>
-			My Favourite Beaches
+				
+				 
+		<!-- end of navigation bar -->
+		
+		
+		
+			<p id="title">My Favourite Beaches</p>
 			
-		</p>  <!-- end of header --> 
+		<!-- end of header --> 
 		
-		
-		<p >
-			LINKS <br>  
-			<!-- Make Links into an unordered list -->
-			<a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> 10 Quirky Things You Didn’t Know About PEI </a>
-			<a href="https://www.tourismpei.com/about-pei" target="_blank">Environment</a>
-			<a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Getting Here</a>
-			<a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Important Travel Information</a>
-			<a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">Island Webcams</a>
+		<!-- Make Links into an unordered list -->
+		<div class="left_links">
+		<ul>
+		LINKS 
+			<li><a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> 10 Quirky Things You Did not Know About PEI </a></li>
+			<li><a href="https://www.tourismpei.com/about-pei" target="_blank">Environment</a></li>
+			<li><a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Getting Here</a></li>
+			<li><a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Important Travel Information</a></li>
+			<li><a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">Island Webcams</a></li>
 			
-		</p> <!-- end of left column -->
-		
-		
-		<p >
-			<img src="Media/beach1.jpg" alt="Beautiful beach" width = "200px"> 
+		</ul>
 			
-			ABOUT OUR BEACHES <br>
+		</div>
+			
+			
+		 <!-- end of left column -->
+		
+		
+		<div class="center">
+			<img id="image" src="Media/beach1.jpg" alt="Beautiful beach" width = "478px"> 
+		
+			<p><em id="smalltitle">ABOUT OUR BEACHES</em><br><br>
 			With beaches that sing and others that stun visitors with their pristine blend of rustic solitude and splendid red sand, Prince Edward Island's sandy expanses continue to receive raves from all over the world, including a nomination as one of Canada's natural wonders.
 			<br>
 			"Walking along the beautiful white sand produces an interesting sound… akin to singing, or some would say, squeaking," the CBC wrote on its website. "It's a phenomenon that scientists still don't completely understand."
@@ -67,26 +243,27 @@
 			"The beaches are so nice, just close your eyes and imagine a very hot day and feel the refreshing wind blowing gently over your skin," said Marie, a tourist from Bromont, Que. "That is what I call a natural spa."
 			<br>
 			Others dream of returning. "PEI is the most beautiful, clean province we have seen, and the beaches are something us in Alberta only see in pictures," says Lori from Edmonton. Lori says she'll return for another PEI vacation soon. Such is the draw of PEI's beautiful beaches. And one thing is certain - she won't be alone.
-			
-		</p> <!-- end of center column -->
+			</p>
+		</div> <!-- end of center column -->
 		
-		
+		<div class="right">
 		<p >
 			On our Island province you are never far from the ocean and one of our numerous spectacular beaches. From the red sand beaches on the south shore to the white sand beaches on the north shore, Prince Edward Island offers a variety of unique and enjoyable beach experiences
-			<img src="Media/riptide.jpg" width = "200px" alt ="Riptide Info">
+			<img src="Media/riptide.jpg" width = "230px" alt ="Riptide Info">
 			<br>
 			Swimming in the ocean is very different from swimming in a pool or lake. The strength and force of even small ocean waves can surprise beach goers who are unfamiliar with the power of the sea. When particular surf conditions are present at some of our beaches, rip currents can occur.
 			
 			
 			
 		</p> <!-- end of right column -->
+		</div>
 		
-				
+		<div class="bottom">
 		<p >
 		   <a href="https://www.tourismpei.com/contact-us-page" target = "_blank" >Contact Us </a> 	
 		   2020 Prince Edward Island Tourism. All Rights Reserved.
 		</p> <!-- end of footer -->
-				
+		</div>	
 	</body>
 
 
